@@ -1,0 +1,320 @@
+/*
+Author: Alamgir Hosen
+Email: alamgirweb11@gmail.com
+Type of section in this template:-
+1.Header-top
+2.Navigation
+3.Banner
+4.About Us
+5.Service section
+6.Contact section
+6.Footer section
+*/
+/*
+Common CSS
+*/
+body{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Open Sans', sans-serif;
+color: #333333;
+font-size: 15px;
+line-height: 1.5em;
+}
+p{
+font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6{
+font-weight: 700;
+line-height: 1.5em;
+}
+ul{
+list-style: none;
+margin: 0;
+padding: 0;
+}
+a{
+transition: .5s;
+text-decoration: none;
+}
+.sec_padding{
+padding: 0px 215px;
+}
+/*===========================================================================================
+Header Start
+=============================================================================================*/
+/*header top section start*/
+.top_header_area{
+background: #a88c95;
+padding: 18px 0px;
+}
+.inner_header{
+display: flex;
+justify-content: space-between;
+}
+.social_area ul{
+display: flex;
+margin-top: 7px;
+}
+.social_area ul li{
+display: inline-block;
+padding: 5px;
+}
+.social_area ul li a{
+padding: 10px;
+text-align: center;
+background: #d2d2d2;
+color: #6a3144;
+height: 32px;
+width: 32px;
+border-radius: 50%;
+}
+.social_area ul li a:hover{
+background: #6a3144;
+color: #fff;
+}
+.search_area form{
+display: flex;
+justify-content: space-between;
+text-align: right;
+width: 300px;
+}
+.search_area input[type="text"]{
+background: #fff;
+border: 0;
+border-radius: 5px 0px 0px 5px ;
+padding: 10px;
+font-weight: 600;
+font-size: 14px;
+width: 220px;
+}
+.search_area input[type="submit"]{
+background: #97455f;
+color: #fff;
+padding: 10px;
+border: 0;
+border-radius: 0px 5px 5px 0px;
+font-weight: 600;
+font-size: 14px;
+width: 82px;
+cursor: pointer;
+text-transform: uppercase;
+}
+/*header top section end*/
+/*nav section start*/
+.nav{
+display: flex;
+justify-content: center;
+background: #97455f;
+}
+.main_menu{
+}
+.toggle-menu{
+display: none;
+}
+.nav ul{
+display: flex;
+}
+.nav ul li{
+}
+.nav ul li a{
+display: inline-block;
+text-decoration: none;
+padding: 20px 12px;
+color: #fff;
+font-weight: 600;
+font-size: 14px;
+}
+.nav ul li a:hover{
+background: #6a3144;
+}
+.active{
+background: #6a3144;
+}
+/*nav section end*/
+/*===========================================================================================
+Header End
+=============================================================================================*/
+/*===========================================================================================
+About us Start
+=============================================================================================*/
+.about_us_area{
+display: flex;
+justify-content: space-between;
+padding: 70px 220px 48px 220px;
+}
+.about_us_left{}
+.about_us_left button{
+background: #6a3144;
+color: #fff;
+border: 1px solid #6a3144;
+font-weight: 600;
+font-size: 16px;
+padding: 18px 24px;
+text-transform: uppercase;
+}
+/*===========================================================================================
+About us End
+=============================================================================================*/
+/*===========================================================================================
+Service section start
+=============================================================================================*/
+.service_area{
+background: #f5f5f5;
+text-align: center;
+padding-bottom: 80px !important;
+}
+.service_area .service_area_text{
+padding: 50px 0px;
+}
+.service_area_text .service_area_title{
+font-size: 2.5rem;
+text-transform: capitalize;
+}
+.service_area .service_main_area{
+display: grid;
+grid-template-columns: auto auto auto;
+}
+.service_main_area .service_sub_area{
+background: ;
+width: 365px;
+height: 350px;
+display: inline-block;
+position: relative;
+}
+.service_main_area .service_sub_area:hover{
+background: #fff;
+box-shadow: 10px 10px 10px #ddd;
+}
+.service_sub_area .service_sub_area_hidden {
+font-family: oswald Bold;
+font-weight: 700;
+font-size: 8.36em;
+color: #e4e2e0;
+position: absolute;
+top: -85px;
+left: 42px;
+}
+.service_sub_area .service_sub_area_text{
+padding: 110px 60px 85px 95px;
+position: absolute;
+}
+.service_sub_area .service_sub_area_title{
+color: #523827;
+}
+.service_sub_area .service_sub_area_sub_title{
+color: #9c9c9c;
+}
+/*===========================================================================================
+Service section end
+=============================================================================================*/
+/*===========================================================================================
+Contact section Start
+=============================================================================================*/
+.contact_area{
+background: #fff;
+
+}
+.contact_area .contact_title{
+text-align: center;
+color: #4C4C4C;
+font-weight: 700;
+font-size: 2em;
+font-family: oswald Bold;
+padding: 70px 0px 47px 0px;
+}
+.contact_form{
+width: 100%;
+max-width: 100%;
+
+}
+.contact_form input[type="text"]{
+padding: 18px 25px;
+border: 1px solid #97455f;
+border-radius: 3px;
+margin: 7px 5px;
+}
+.name{
+float: left;
+width: 48%;
+}
+.email{
+float: right;
+width: 48%;
+}
+.mobile{
+float: left;
+width: 48%;
+}
+.company{
+float: right;
+width: 48%;
+}
+.message{
+width: 99%;
+padding: 18px 25px;
+border: 1px solid #97455f;
+border-radius: 3px;
+margin: 7px 5px;
+}
+.submit {
+text-align: center;
+margin: 21px auto 70px auto;
+background: #97455f;
+color: #fff;
+border: 1px solid #97455f;
+display: block;
+font-size: 25px;
+width: 250px;
+height: 60px;
+border-radius: 50px;
+transition: .5s;
+}
+.submit:hover{
+background: #535267;
+color: #ABABAD;
+border: none;
+}
+/*===========================================================================================
+Contact section End
+=============================================================================================*/
+/*===========================================================================================
+Footer Start
+=============================================================================================*/
+.footer_area{
+background: #363636;
+}
+.footer_area_inner{
+display: flex;
+justify-content: space-between;
+}
+.footer_area_inner h4{
+color: #fff;
+font-size: 18px;
+font-weight: 500;
+padding-top: 33px;
+}
+.footer_area_inner ul li a{
+text-decoration: none;
+color: #626262DB;
+}
+.footer_area_inner ul li a:hover{
+color: #DEDEDE;
+}
+.contact_with_us address{
+color: #626262DB;
+transition: .5s;
+cursor: pointer;
+}
+.contact_with_us address:hover{
+color: #DEDEDE;
+}
+.copyright {
+text-align: center;
+color: #6a6a6a;
+padding: 40px 0px;
+}
+/*===========================================================================================
+Footer End
+=============================================================================================*/
